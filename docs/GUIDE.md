@@ -538,7 +538,7 @@ It's used to distinguish between closed and open terms:
 - Closed term: `type ClosedTerm = forall s. Term s a`
 - Arbitrary term: `exists s. Term s a`
 - NB: `(exists s. Term s a) -> b` is isomorphic to
-- `forall s. Term s a → b`
+- `forall s. Term s a -> b`
 
 ### eDSL Types in Plutarch
 
@@ -1603,7 +1603,7 @@ Left (EvaluationError [] "(CekEvaluationFailure,Nothing)")
 {-# LANGUAGE QualifiedDo #-}
 {-# LANGUAGE RecordDotSyntax #-}
 
-import Plutarh.Prelude
+import Plutarch.Prelude
 import Plutarch.Api.Contexts
 import Plutarch.Api.Crypto
 import Plutarch.Api.Scripts
