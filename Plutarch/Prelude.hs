@@ -140,6 +140,9 @@ module Plutarch.Prelude (
   tcont,
 ) where
 
+type a :$ b = a b
+infixr 0 :$
+
 import Prelude ()
 
 import Data.Kind (Type)
